@@ -23,7 +23,7 @@ alias em='emacsclient -t'
 
 # python
 alias py='python'
-stpyenv () { if [[ $# > 0 ]]; then; source ~/venv36/bin/activate; else; source ~/venv37/bin/activate; fi }
+stpyenv () { if [[ $# > 0 ]]; then; source ~/venv37/bin/activate; else; source ~/venv38/bin/activate; fi }
 alias prun='pipenv run python'
 
 # seasnet
@@ -41,5 +41,5 @@ findinfile () { find $1 -exec grep -i -l $2 {} \; 2>/dev/null }
 alias ga='git add'
 alias gst='git status'
 alias gp='git push'
-alias gc='git commit'
+alias gc='git commit --verbose'
 alias gpl='git pull --rebase'
