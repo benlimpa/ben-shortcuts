@@ -11,6 +11,7 @@ alias mntflash='sudo mount -o gid=users,fmask=113,dmask=002'
 alias atmon='~/Projects/scripts/attach_monitor.sh'
 alias stopam='eval $(opam env)'
 alias lsr='ls -rt'
+evinced () { nohup evince $1 2>&1 1>/dev/null &! }
 
 alias darkmode='env GTK_THEME=Arc:dark'
 
@@ -18,8 +19,9 @@ alias darkmode='env GTK_THEME=Arc:dark'
 # Editors
 alias v='nvim'
 alias vf='nvim "$(fzf)"'
-alias emc='emacsclient -c --no-wait'
-alias em='emacsclient -t'
+alias emc='emacsclient -a "" -c --no-wait'
+alias em='emacsclient -a "" -t'
+alias e='emacsclient -a "" -t'
 
 # python
 alias py='python'
